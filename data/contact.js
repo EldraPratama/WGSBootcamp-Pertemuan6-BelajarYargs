@@ -17,14 +17,6 @@ if (!fs.existsSync(dataPath)) {
 }
 
 
-//Pertanyaan
-const questions = (ask) =>{
-    return new Promise((resolve,reject)=>{
-        rl.question(ask,(inputVariable)=>{
-            resolve(inputVariable);
-        });
-    });
-};
 
 //Menyimpan inputan
 const SaveContact = (name,email,phone)=>{
@@ -48,4 +40,4 @@ const SaveContact = (name,email,phone)=>{
 }
 
 
-module.exports={questions,SaveContact}
+module.exports={SaveContact}
